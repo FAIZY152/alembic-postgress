@@ -8,6 +8,6 @@ class Todo(Base):
     id = Column(Integer, primary_key=True, autoincrement=True)
     title = Column(String, nullable=False)
     description = Column(String)
-    completed = Column(Boolean, default=False)
+    status = Column(Boolean, default=False)
     created_at = Column(DateTime)
     updated_at = Column(DateTime)   
