@@ -48,7 +48,7 @@ class TodoCreate(BaseModel):
 async def create_todo(todo: TodoCreate, request: Request ,  db = Depends(DBConnect)):
       
     try:
-        # Check if the title is provided
+
         if not todo.title:
             raise HTTPException(status_code=400, detail="Title is required.")
         
