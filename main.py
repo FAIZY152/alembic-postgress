@@ -10,16 +10,10 @@ import os
 
 load_dotenv()
 
-
-
-
 app = FastAPI()
 
 # Create Database tables through migration
 Todo.metadata.create_all(bind=engine)
-
-
-
 
 # connect to the database
 def DBConnect():
