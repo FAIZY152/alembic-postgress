@@ -11,5 +11,4 @@ class User(Base):
     name = Column(String, nullable=False)
     email = Column(String)
     status = Column(Boolean, default=False)
-    created_at = Column(DateTime)
-    updated_at = Column(DateTime)   
+  
