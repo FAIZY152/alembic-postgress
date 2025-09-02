@@ -3,6 +3,8 @@ from sqlalchemy.ext.declarative import declarative_base
 
 Base = declarative_base()
 
+
+# model for todos
 class Todo(Base):
     __tablename__ = 'todos'
     id = Column(Integer, primary_key=True, autoincrement=True)
