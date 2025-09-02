@@ -3,7 +3,7 @@ from sqlalchemy.ext.declarative import declarative_base
 
 Base = declarative_base()
 
-
+# now write the model for user 
 # model for todos
 class User(Base):
     __tablename__ = 'user'
@@ -11,4 +11,5 @@ class User(Base):
     name = Column(String, nullable=False)
     email = Column(String)
     status = Column(Boolean, default=False)
+    
   
